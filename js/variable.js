@@ -36,3 +36,4 @@ console.log( 'Megstamas skaicius:', megstamasSkaicius);
 
 const belekoksSarasas = [5, 'asd', true, false, [18, '-asfdg']];
 console.log(belekoksSarasas)
+

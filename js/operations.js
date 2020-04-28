@@ -83,5 +83,6 @@ console.log('Visa ABC:', abcSakinys);
 abcSakinys = abcSakinys + abc[2];
 console.log('Visa ABC:', abcSakinys);
 
+console.log(pazymiai[3]);
 
-
+/* 
