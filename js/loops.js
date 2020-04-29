@@ -97,3 +97,25 @@ console.log('*******TEKSTAS*****');
   console.log('Skaičių intervale tarp', pr, 'ir', pb+', besidalijančių be liekanos iš', dal1, 'yra', ats2, 'vienetai');
   console.log('Skaičių intervale tarp', pr, 'ir', pb+', besidalijančių be liekanos iš', dal2, 'yra', ats3, 'vienetai');
 
+  console.log('*******************');
+  console.log('***Rimanto dalyba be liekanos*');
+  console.log('*****************');  
+
+  //Kiek intervale yra skaiciu kurie dalijasi is 3,5,7 be liekanos?
+    // 0-11, 8-31, -18 - 18;
+
+    const from = 0;
+    const till = 11;
+    const divider = 3;
+    let counter = 0;
+
+    for (let i = from; i <=till; i ++) {
+            if (i % divider === 0) {
+                counter++ ;
+            }           
+         }
+
+    // count = (till - from) / divider
+    const answer = `Skaičių intervale tarp ${from} ir ${till}, besidalijančių be liekanos iš ${divider} yra ${counter} vienetai`;
+    console.log(answer)
+
