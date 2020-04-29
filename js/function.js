@@ -35,3 +35,34 @@ console.log('*****SKAITMENU**************')
 console.log('********KIEKIS***********')
 console.log('**********SKAICIUJE*********')
 
+function skaitmenuKiekisSkaiciuje( number ){
+    // validavimas
+    if (typeof(number) !== 'number' ||
+        isFinite(number) === false ) {
+        return console.error('ERROR: reikalingas tikras skaicius');
+    }
+        
+    // logic
+    const skaiciusTekstu = ''+number;
+    const count = skaiciusTekstu.length;
+
+    // if ( skaicius ) {
+    //     count--;
+    // }
+
+    // jei tekstineje skaiciaus reprezenatacijoje yra kablelis, tai count--
+    for(let i=0; i<skaiciusTekstu.length; i++) {
+        if (skaiciusTekstu[i] === '.') {
+            count--
+        }
+    }
+
+    
+    // result return
+    return count;
+}
+console.log( skaitmenuKiekisSkaiciuje(Infinity));
+console.log( skaitmenuKiekisSkaiciuje(NaN));
+console.log( skaitmenuKiekisSkaiciuje(455));
+console.log( skaitmenuKiekisSkaiciuje(5554));
+console.log( skaitmenuKiekisSkaiciuje(55555.55555));
