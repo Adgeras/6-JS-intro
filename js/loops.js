@@ -67,8 +67,8 @@ console.log('*******TEKSTAS*****');
     // 0-11, 8-31, -18 - 18;
 
  
- const pr = 0;
- const pb = 11;
+ const pr = -18;
+ const pb = 18;
  const dal = 3;
  const dal1 = 5;
  const dal2 = 7;
@@ -83,13 +83,13 @@ console.log('*******TEKSTAS*****');
         liekana7 = i % dal2;
         // console.log(liekana3, liekana5, liekana7);
             if (liekana3 === 0) {
-                ats1 = ats1 + 1;
+                ats1++ ;
             }           
             if (liekana5 === 0) {
-                ats2 = ats2 + 1;
+                ats2++ ;
             }           
             if (liekana7 === 0) {
-                ats3 = ats3 + 1;
+                ats3++ ;
             }           
         }
 
